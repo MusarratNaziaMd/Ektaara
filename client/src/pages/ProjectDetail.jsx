@@ -319,11 +319,11 @@ export default function ProjectDetail() {
             <select className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500" value={memberEmail} onChange={(e) => setMemberEmail(e.target.value)} required>
               <option value="">Select a user...</option>
               {/* In a real app, fetch users. For now, known demo users */}
-              <option value="nazia@ektaara.dev">Nazia</option>
-              <option value="sravys@ektaara.dev">Sravys</option>
-              <option value="anoohya@ektaara.dev">Anoohya</option>
-              <option value="krishna@ektaara.dev">Krishna</option>
-              <option value="anusha@ektaara.dev">Anusha</option>
+              <option value="nazia@ethara.ai">Nazia</option>
+              <option value="sravys@ethara.ai">Sravys</option>
+              <option value="anoohya@ethara.ai">Anoohya</option>
+              <option value="krishna@ethara.ai">Krishna</option>
+              <option value="anusha@ethara.ai">Anusha</option>
             </select>
           </div>
           <div className="flex justify-end gap-3 pt-2">

@@ -28,7 +28,7 @@ export default function Sidebar({ open, onClose }) {
             <div className="w-8 h-8 bg-[#A1FFC2] rounded-lg flex items-center justify-center">
               <span className="text-[#050810] font-bold text-sm">E</span>
             </div>
-            <span className="font-semibold text-white">Ektaara</span>
+            <span className="font-semibold text-white">Ethara</span>
           </div>
           <button onClick={onClose} className="lg:hidden p-1 text-white/40 hover:text-white">
             <X className="w-5 h-5" />

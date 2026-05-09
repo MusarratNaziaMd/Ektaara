@@ -1,7 +1,7 @@
 {
-  "name": "ektaara-server",
+  "name": "ethara-server",
   "version": "1.0.0",
-  "description": "Ektaara - Collaborative Project & Workflow Tracker API",
+  "description": "Ethara - Collaborative Project & Workflow Tracker API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

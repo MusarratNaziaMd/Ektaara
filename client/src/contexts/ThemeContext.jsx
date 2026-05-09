@@ -4,7 +4,7 @@ const ThemeContext = createContext(null);
 
 export function ThemeProvider({ children }) {
   const [dark, setDark] = useState(() => {
-    const stored = localStorage.getItem('ektaara_theme');
+    const stored = localStorage.getItem('ethara_theme');
     if (stored) return stored === 'dark';
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
@@ -16,7 +16,7 @@ export function ThemeProvider({ children }) {
     } else {
       root.classList.remove('dark');
     }
-    localStorage.setItem('ektaara_theme', dark ? 'dark' : 'light');
+    localStorage.setItem('ethara_theme', dark ? 'dark' : 'light');
   }, [dark]);
 
   const toggle = () => setDark(prev => !prev);

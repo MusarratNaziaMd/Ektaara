@@ -6,7 +6,7 @@ const api = axios.create({
 });
 
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('ektaara_token');
+  const token = localStorage.getItem('ethara_token');
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
@@ -17,8 +17,8 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      localStorage.removeItem('ektaara_token');
-      localStorage.removeItem('ektaara_user');
+      localStorage.removeItem('ethara_token');
+      localStorage.removeItem('ethara_user');
       if (window.location.pathname !== '/login' && window.location.pathname !== '/signup') {
         window.location.href = '/login';
       }

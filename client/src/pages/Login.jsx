@@ -35,7 +35,7 @@ export default function Login() {
             <div className="w-10 h-10 bg-[#A1FFC2] rounded-xl flex items-center justify-center">
               <span className="text-[#050810] font-bold text-lg">E</span>
             </div>
-            <span className="text-2xl font-bold text-white">Ektaara</span>
+            <span className="text-2xl font-bold text-white">Ethara</span>
           </Link>
           <h1 className="text-2xl font-bold text-white">Welcome back</h1>
           <p className="text-white/50 mt-1">Sign in to your account</p>

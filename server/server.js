@@ -28,11 +28,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-  res.json({ success: true, message: 'Ektaara API', version: '1.0.0', docs: '/api/health' });
+  res.json({ success: true, message: 'Ethara API', version: '1.0.0', docs: '/api/health' });
 });
 
 app.get('/api/health', (req, res) => {
-  res.json({ success: true, message: 'Ektaara API is running', timestamp: new Date().toISOString() });
+  res.json({ success: true, message: 'Ethara API is running', timestamp: new Date().toISOString() });
 });
 
 app.use('/api/auth', require('./routes/auth'));

@@ -10,7 +10,7 @@ export default function Landing() {
             <div className="w-8 h-8 bg-[#A1FFC2] rounded-lg flex items-center justify-center">
               <span className="text-[#050810] font-bold text-sm">E</span>
             </div>
-            <span className="font-semibold text-white">Ektaara</span>
+            <span className="font-semibold text-white">Ethara</span>
           </div>
           <div className="flex items-center gap-3">
             <Link to="/login" className="px-4 py-2 text-sm font-medium text-white/60 hover:text-white transition-colors">
@@ -33,7 +33,7 @@ export default function Landing() {
               Deliver Faster.
             </h1>
             <p className="mt-6 text-lg text-white/50 max-w-2xl mx-auto">
-              Ektaara is a smart collaborative platform for teams to create projects, assign tasks, track deadlines, and monitor progress in real-time.
+              Ethara is a smart collaborative platform for teams to create projects, assign tasks, track deadlines, and monitor progress in real-time.
             </p>
             <div className="mt-8 flex items-center justify-center gap-4">
               <Link
@@ -85,7 +85,7 @@ export default function Landing() {
 
       <footer className="border-t border-white/10 py-6">
         <p className="text-center text-sm text-white/30">
-          &copy; {new Date().getFullYear()} Ektaara. All rights reserved.
+          &copy; {new Date().getFullYear()} Ethara. All rights reserved.
         </p>
       </footer>
     </div>

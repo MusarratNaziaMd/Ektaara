@@ -8,15 +8,15 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const token = localStorage.getItem('ektaara_token');
+    const token = localStorage.getItem('ethara_token');
     if (token) {
       getMe()
         .then(({ data }) => {
           setUser(data.data.user);
         })
         .catch(() => {
-          localStorage.removeItem('ektaara_token');
-          localStorage.removeItem('ektaara_user');
+          localStorage.removeItem('ethara_token');
+          localStorage.removeItem('ethara_user');
         })
         .finally(() => setLoading(false));
     } else {
@@ -26,23 +26,23 @@ export function AuthProvider({ children }) {
 
   const login = async (credentials) => {
     const { data } = await loginApi(credentials);
-    localStorage.setItem('ektaara_token', data.data.token);
-    localStorage.setItem('ektaara_user', JSON.stringify(data.data.user));
+    localStorage.setItem('ethara_token', data.data.token);
+    localStorage.setItem('ethara_user', JSON.stringify(data.data.user));
     setUser(data.data.user);
     return data;
   };
 
   const signup = async (credentials) => {
     const { data } = await signupApi(credentials);
-    localStorage.setItem('ektaara_token', data.data.token);
-    localStorage.setItem('ektaara_user', JSON.stringify(data.data.user));
+    localStorage.setItem('ethara_token', data.data.token);
+    localStorage.setItem('ethara_user', JSON.stringify(data.data.user));
     setUser(data.data.user);
     return data;
   };
 
   const logout = () => {
-    localStorage.removeItem('ektaara_token');
-    localStorage.removeItem('ektaara_user');
+    localStorage.removeItem('ethara_token');
+    localStorage.removeItem('ethara_user');
     setUser(null);
   };
 

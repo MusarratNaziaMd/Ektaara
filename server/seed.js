@@ -13,17 +13,17 @@ const seed = async () => {
 
   const admin = await User.create({
     name: 'Nazia',
-    email: 'nazia@ektaara.dev',
+    email: 'nazia@ethara.ai',
     password: 'password123',
     role: 'admin',
     avatarColor: '#8b5cf6'
   });
 
   const members = await User.create([
-    { name: 'Sravys', email: 'sravys@ektaara.dev', password: 'password123', role: 'member', avatarColor: '#ec4899' },
-    { name: 'Anoohya', email: 'anoohya@ektaara.dev', password: 'password123', role: 'member', avatarColor: '#22c55e' },
-    { name: 'Krishna', email: 'krishna@ektaara.dev', password: 'password123', role: 'member', avatarColor: '#f97316' },
-    { name: 'Anusha', email: 'anusha@ektaara.dev', password: 'password123', role: 'member', avatarColor: '#06b6d4' }
+    { name: 'Sravys', email: 'sravys@ethara.ai', password: 'password123', role: 'member', avatarColor: '#ec4899' },
+    { name: 'Anoohya', email: 'anoohya@ethara.ai', password: 'password123', role: 'member', avatarColor: '#22c55e' },
+    { name: 'Krishna', email: 'krishna@ethara.ai', password: 'password123', role: 'member', avatarColor: '#f97316' },
+    { name: 'Anusha', email: 'anusha@ethara.ai', password: 'password123', role: 'member', avatarColor: '#06b6d4' }
   ]);
 
   const project1 = await Project.create({
@@ -74,8 +74,8 @@ const seed = async () => {
     { user: admin._id, action: 'created_task', entityType: 'task', entityId: project1._id, projectId: project1._id, metadata: { title: 'Design Landing Page' } }
   ]);
 
-  console.log('Admin: Nazia (nazia@ektaara.dev / password123)');
-  console.log('Members: sravys@, anoohya@, krishna@, anusha@ektaara.dev / password123');
+  console.log('Admin: Nazia (nazia@ethara.ai / password123)');
+  console.log('Members: sravys@, anoohya@, krishna@, anusha@ethara.ai / password123');
 };
 
 if (require.main === module) {
