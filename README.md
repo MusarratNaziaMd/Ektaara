@@ -1,4 +1,4 @@
-# Ethara
+# Ethara.AI - Project Manager
 
 A collaborative project tracking platform with Kanban boards, real-time updates, role-based access, and team management.
 
