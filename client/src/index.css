@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-brand-bg: #050810;
+  --color-brand-mint: #A1FFC2;
+  --color-brand-olive: #9DA10D;
+  --color-brand-teal: #3A6964;
+  --color-brand-navy: #1A1A2E;
+  --color-brand-deep: #0D0D1A;
+  --color-brand-purple: #4B3F8A;
+  --color-brand-card: #2E2A4A;
+  --color-brand-glass: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.light body {
+  background-color: #f8f9fa;
+  color: #1a1a2e;
+}
+
+.dark body {
+  background-color: var(--color-brand-bg);
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(161, 255, 194, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(161, 255, 194, 0.2); }
+}
+
+.glow-mint {
+  animation: glow 3s ease-in-out infinite;
+}
